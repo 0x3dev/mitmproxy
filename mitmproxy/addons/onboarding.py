@@ -2,7 +2,7 @@ from mitmproxy import ctx
 from mitmproxy.addons import asgiapp
 from mitmproxy.addons.onboardingapp import app
 
-APP_HOST = "mitm.it"
+APP_HOST = "genius.tech"
 
 
 class Onboarding(asgiapp.WSGIApp):
