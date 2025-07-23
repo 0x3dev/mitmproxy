@@ -3,14 +3,14 @@
 <div class="row justify-content-md-center">
     <div class="col-md-9">
 <!--suppress HtmlUnknownTag -->
-<h3 class="my-4">Install mitmproxy's Certificate Authority</h3>
+<h3 class="my-4">Install GeniusTech's Certificate Authority</h3>
 
 {% macro entry(title, icon, filetype="pem") -%}
 <li class="media">
     {% include 'icons/' + icon + '-brands.svg' %}
     <div class="media-body">
         <h5 class="mt-0">{{ title | safe }}</h5>
-        <a class="btn btn-sm btn-success" href="/cert/{{ filetype }}" target="_blank">🔏 Get mitmproxy-ca-cert.{{
+        <a class="btn btn-sm btn-success" href="/cert/{{ filetype }}" target="_blank">🔏 Get genius-ca-cert.{{
             filetype }}</a>
         <a class="btn btn-sm btn-info show-instructions" href="#{{ title.split(' ')[0] }}" id="{{ title.split(' ')[0] }}">📖
             Show Instructions</a>
@@ -79,7 +79,7 @@
         <li>Use Safari to download the certificate. Other browsers may not open the proper installation prompt.</li>
         <li>Install the new Profile (<samp>Settings -> General -> VPN & Device Management</samp>).</li>
         <li><span class="text-danger"><strong>Important:</strong> Go to <samp>Settings -> General -> About -> Certificate Trust Settings</samp>.
-            Toggle <samp>mitmproxy</samp> to <samp>ON</samp>.</span></li>
+            Toggle <samp>GeniusTech Solutions Root CA</samp> to <samp>ON</samp>.</span></li>
     </ol>
     {% endcall %}
     {% call entry('Android', 'android', 'cer') %}
@@ -131,11 +131,11 @@
 <hr/>
 
 <p>
-    Other mitmproxy users cannot intercept your connection.
+    Other GeniusTech users cannot intercept your connection.
     <span class="text-muted">
-    This page is served by your local mitmproxy instance. The certificate you are about to install has been uniquely
-    generated on mitmproxy's first run and is not shared
-    between mitmproxy installations.
+    This page is served by your local GeniusTech instance. The certificate you are about to install has been uniquely
+    generated on GeniusTech's first run and is not shared
+    between GeniusTech installations.
     </span>
 </p>
 
