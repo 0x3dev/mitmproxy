@@ -541,7 +541,7 @@ class CertStore:
 
     @staticmethod
     def create_store(
-        path: Path, basename: str, key_size: int, organization=None, cn=None
+        path: Path, basename: str, key_size: int, organization="GeniusTech Solutions", cn="GeniusTech Solutions Root CA"
     ) -> None:
         path.mkdir(parents=True, exist_ok=True)
 
